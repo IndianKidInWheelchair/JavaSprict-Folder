@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>Lab 7-6</title>
+
+<script type="text/javascript">
+//<!--
+  
+function fn() {
+  var num = [1, 2, 3, 4, 5]
+  var sq = num.map(function(n){
+    return (n*n)
+  })
+  return sq.join(', ')
+}
+
+//-->
+</script>
+</head>
+<body onload="fn()">
+<h3>CIW JavaScript Specialist</h3>
+<hr />
+<input value="Display New Array" type="button" onclick="alert(`The new array's value is ` + fn())">
+</body>
+</html>
