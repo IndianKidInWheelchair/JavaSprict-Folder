@@ -9,11 +9,11 @@
 function openWindow(){
 var info="";
 
-  info += "Welcome, " +               ;         //Add appCodeName here
+  info += "Welcome, " +   Mozilla             ;         //Add appCodeName here
   info += " user!\nYou are using the "; 
-  info +=      + " browser,\nversion ";        //Add appName here
-  info +=      + ".\nYour user agent ";       //Add appVersion here
-  info += "information is " +         ;          //Add userAgent here
+  info += Netscape      + " browser,\nversion ";        //Add appName here
+  info += 5.0      + ".\nYour user agent ";       //Add appVersion here
+  info += "information is " + Mozilla/5.0        ;          //Add userAgent here
 
   alert(info);
 }
@@ -28,7 +28,8 @@ var info="";
 
 <script type="text/javascript">
 
-      //Add userAgent here to write to browser window
+    document.write("<p>The property <strong><em>navigator.userAgent</em></strong> " + "returns:<br /><strong><font color='#FF0000'>" + navigator.userAgent + "</font></strong></p>");
+</script>
 
 </script>
 

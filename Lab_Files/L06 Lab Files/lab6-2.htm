@@ -22,17 +22,11 @@ event handler to call the window.close() method.
 
 ******************************************************/
   
+var myWindow= open("", "myWindow", height="100", width="100");
 function smallWindow() {
-    var myWindow= Open(" ","myWindow", height="100", width="100");
-    myWindow.document.open()
-    myWindow.document.write();
-    <form name="blank">
-        <input type="button" value="Close">
-    myWindow.document.close();
-   
+    document.write("<form><input type='button' value='Close' onclick=window.close()></form>");
 }
-
-
+smallWindow()
 //-->
 </script>
 
