@@ -13,6 +13,12 @@
 **********************************************/
   
 function newWindow() {
+  var newWindow;
+  newWindow=open("http://www.ciwcertified.com");
+  newWindow=open("","dynamicWindow","toolbar=1,location=1");
+  newWindow.document.open();
+  newWindow.document.write("<height='300' width='400' />");
+  newWindow.document.close();
 
 }
 
