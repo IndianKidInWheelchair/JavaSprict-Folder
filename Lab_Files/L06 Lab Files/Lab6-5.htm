@@ -18,19 +18,24 @@
 	  images/ciw_on.gif, images/ciw_off.gif, 
 	  images/ciw1_on.gif, images/ciw1_off.gif 
 **************************************************************/
+imagename= ciw_on 
+imagename= ciw_off
+imagename= ciw1_on
+imagename= ciw1_off
+document.images[0].src =images/ciw_on.gif.src;
+document.images[0].src=images/ciw_off.gif.src;
+document.images[1].src=images/ciw1_on.gif.src;
+document.images[1].src=images/images/ciw1_off.gif.src;
 
-// Create the image objects
-ciw_on = new Image(); // Create an Image object with the name "ciw_on"
-ciw_off = new Image();
-ciw1_on = new Image();
-ciw1_off = new Image();
-
-// Set the images sources
-ciw_on.src = "images/ciw_on.gif" // Sep the image source (src property) to the image location.
-ciw_off.src = "images/ciw_off.gif"
-ciw1_on.src = "images/ciw1_on.gif"
-ciw1_off.src = "images/ciw_off.gif"
-
+    
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	function imageOn(imagename) {
 	  if (document.images) {
@@ -59,14 +64,14 @@ ciw1_off.src = "images/ciw_off.gif"
 <a href="http://www.ciwcertified.com" 
   onMouseOver="imageOn('ciw');status='Visit CIW Certified';return true;" 
   onMouseOut="imageOff('ciw');status='';return true;">
-<img src="images/ciw_off.gif" name="ciw" width="100" height="52" /></a>
+<img src="images/ciw_off.gif" name="ciw" border="0" width="100" height="52" /></a>
 
 <p>
 
 <a href="https://www.ciwcertified.com/about-ciw/training-locator" 
  onMouseOver="imageOn('ciw1');status='Visit the CIW training locator';return true;"
  onMouseOut="imageOff('ciw1');status='';return true;">
-<img src="images/ciw1_off.gif" name="ciw1" width="100" height="52" /></a>
+<img src="images/ciw1_off.gif" name="ciw1" border="0" width="100" height="52" /></a>
 </p>
 
 </body>
